@@ -20,12 +20,12 @@ st.set_page_config(
 
 # Global layout styling optimizations
 st.markdown("""
-    <style>
-    .main { background-color: #f9fbf9; }
-    .stButton>button { width: 100%; border-radius: 8px; background-color: #2e7d32; color: white; font-weight: bold; height: 3em; }
-    .stButton>button:hover { background-color: #1b5e20; color: white; }
-    </style>
-""", unsafe_allow_all_html=True)
+<style>
+.main { background-color: #f9fbf9; }
+.stButton>button { width: 100%; border-radius: 8px; }
+</style>
+""", unsafe_allow_html=True)  # <--- Fixed parameter name
+
 
 # Define static fallback range guards (derived directly from structural training limits)
 BOUNDARIES = {
