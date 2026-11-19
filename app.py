@@ -29,13 +29,13 @@ st.markdown("""
 
 # Define static fallback range guards (derived directly from structural training limits)
 BOUNDARIES = {
-    'N': {'min': 0.0, 'max': 140.0, 'default': 50.0, 'step': 1.0, 'unit': 'mg/kg', 'label': 'Nitrogen (N)'},
-    'P': {'min': 5.0, 'max': 145.0, 'default': 40.0, 'step': 1.0, 'unit': 'mg/kg', 'label': 'Phosphorus (P)'},
-    'K': {'min': 5.0, 'max': 205.0, 'default': 40.0, 'step': 1.0, 'unit': 'mg/kg', 'label': 'Potassium (K)'},
-    'temperature': {'min': 8.0, 'max': 45.0, 'default': 25.0, 'step': 0.1, 'unit': '°C', 'label': 'Ambient Temperature'},
-    'humidity': {'min': 14.0, 'max': 100.0, 'default': 70.0, 'step': 0.1, 'unit': '%', 'label': 'Relative Humidity'},
-    'ph': {'min': 3.5, 'max': 10.0, 'default': 6.5, 'step': 0.1, 'unit': 'pH', 'label': 'Soil pH Scale'},
-    'rainfall': {'min': 20.0, 'max': 300.0, 'default': 100.0, 'step': 0.5, 'unit': 'mm', 'label': 'Seasonal Precipitation Depth'}
+    'N': {'min': 0.0, 'max': 140.0, 'default': 50.0, 'step': 1.0, 'unit': 'mg/kg', 'label': 'ናይትሮጂን (N)'},
+    'P': {'min': 5.0, 'max': 145.0, 'default': 40.0, 'step': 1.0, 'unit': 'mg/kg', 'label': 'ፎስፈረስ (P)'},
+    'K': {'min': 5.0, 'max': 205.0, 'default': 40.0, 'step': 1.0, 'unit': 'mg/kg', 'label': 'ፖታሲየም (K)'},
+    'temperature': {'min': 8.0, 'max': 45.0, 'default': 25.0, 'step': 0.1, 'unit': '°C', 'label': 'የሙቀት መጠን'},
+    'humidity': {'min': 14.0, 'max': 100.0, 'default': 70.0, 'step': 0.1, 'unit': '%', 'label': 'የአየር እርጥበት'},
+    'ph': {'min': 3.5, 'max': 10.0, 'default': 6.5, 'step': 0.1, 'unit': 'pH', 'label': 'ፒኤች - የአፈር አሲዳማነት ልኬት'},
+    'rainfall': {'min': 20.0, 'max': 300.0, 'default': 100.0, 'step': 0.5, 'unit': 'mm', 'label': 'የዝናብ መጠን'}
 }
 
 @st.cache_resource(show_spinner="Loading trained production model systems...")
