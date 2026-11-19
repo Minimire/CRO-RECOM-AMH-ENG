@@ -4,7 +4,7 @@ An AI-driven agricultural decision-support microservice pipeline designed to rec
 
 ## ðŸš€ Live Application
 The interactive dashboard is deployed and accessible live:
-ðŸ‘‰ **[Live Streamlit Dashboard:**[ https://cro-recom-amh-eng-mih.streamlit.app/#model-interpretability-and-explainable-ai-xai ]
+ðŸ‘‰ **[Live Streamlit Dashboard:**https://cro-recom-amh-eng-fma8rfdtyuk8an2ucq8kih.streamlit.app
 
 ---
 
