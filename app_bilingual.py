@@ -228,18 +228,20 @@ if predict_clicked:
             key for key, value in values.items()
             if not (training_bounds[key][0] <= value <= training_bounds[key][1])
         ]
-        if outside:
-            st.warning(t["out_of_range"] + " (" + ", ".join(outside) + ")")
-      features = [
-    "N",
-    "P",
-    "K",
-    "temperature",
-    "humidity",
-    "ph",
-    "rainfall"
-        ]
+                if outside:
+            st.warning(
+                t["out_of_range"] + " (" + ", ".join(outside) + ")"
+            )
 
+        features = [
+            "N",
+            "P",
+            "K",
+            "temperature",
+            "humidity",
+            "ph",
+            "rainfall"
+        ]
         # SHAP explanation
         # Explainability: global feature importance
         st.header(t["explanation"])
