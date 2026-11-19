@@ -230,7 +230,17 @@ if predict_clicked:
         ]
         if outside:
             st.warning(t["out_of_range"] + " (" + ", ".join(outside) + ")")
+      features = [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+        ]
 
+        # SHAP explanation
         # Explainability: global feature importance
         st.header(t["explanation"])
         if hasattr(model, "feature_importances_"):
