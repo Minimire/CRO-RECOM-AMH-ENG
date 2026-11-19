@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import joblib
 import os
-
+import pickletools
 # Set professional layout configurations
 st.set_page_config(
     page_title="AI Crop Recommendation System",
