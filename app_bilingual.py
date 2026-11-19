@@ -224,11 +224,12 @@ if predict_clicked:
             "N": N, "P": P, "K": K, "temperature": temperature,
             "humidity": humidity, "ph": ph, "rainfall": rainfall
         }
-        outside = [
+                outside = [
             key for key, value in values.items()
             if not (training_bounds[key][0] <= value <= training_bounds[key][1])
         ]
-                if outside:
+
+        if outside:
             st.warning(
                 t["out_of_range"] + " (" + ", ".join(outside) + ")"
             )
@@ -242,9 +243,11 @@ if predict_clicked:
             "ph",
             "rainfall"
         ]
+
         # SHAP explanation
         # Explainability: global feature importance
         st.header(t["explanation"])
+
         if hasattr(model, "feature_importances_"):
             st.subheader(t["importance"])
             importance_df = pd.DataFrame({
